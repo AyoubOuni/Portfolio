@@ -1,0 +1,16 @@
+.bord{ border-width: 1.5px;
+    border-color:black}
+    .title{color:white;
+        font-weight:bold;
+    text-decoration: underline;
+    text-underline-offset: 6.7px;}
+    @media screen and (min-width:200px) and (max-width:1150px) {
+        .grand_text{font-size: 21.45px !important;}
+        }
+      .grand_text{font-size: 35px;}
+      .widthbox{width:480px !important;}
+      .widthbox2{width:408px !important;}
+      @media screen and (min-width:200px) and (max-width:1150px) {
+        .widthbox{width:280px !important;}
+
+        }

@@ -1,0 +1,124 @@
+::-webkit-scrollbar{
+  width:10px;
+  
+}
+::-webkit-scrollbar-track{
+  background:white;
+  border-radius: 1em;
+  margin-block:2em;
+}
+::-webkit-scrollbar-thumb{
+  background:#555;
+  border-radius:1em;
+  
+}
+::-webkit-scrollbar-thumb:hover{
+  background:#7FCDCD;
+}
+.all{background-color: #7FCDCD;
+  position: relative;
+
+  background:linear-gradient(160deg, #00ffff, #7FCDCD 60%, white 100%, white);
+
+  width: 100%;
+  }
+
+.line-1{ 
+    font-size: 180%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter1 3s steps(50) 1s  normal both
+}
+@keyframes typewriter1{
+  from{width: 0;}
+  to{width: 14.6em;}
+}
+.anim-typewriter2{
+  animation: typewriter 3s steps(50) 4.8s 1 normal both}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15.8em;}
+}
+.anim-typewriter3{
+  animation: typewriter 3s steps(50) 8s 1 normal both}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15.8em;}
+}
+.anim-typewriter4{
+  animation: typewriter 3s steps(50) 11s 1 normal both}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15.8em;}
+}
+#button {
+  display: inline-block;
+  width: 40px;
+  height: 33px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  display:none;
+  z-index: 1000;
+  animation: movebtn 3s ease-in-out infinite;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+@media screen and (max-width: 1150px) {
+  .ab{
+    font-size: 60%;
+    font-weight: bold;
+    margin-right: 25px;
+  }
+  .img{
+    width:200px; height:200px;
+    margin-right:22px;
+  }
+  .mp{
+    margin-right:10px;
+
+  }
+  
+}
+.all::before{
+  content: "";
+  background-color: #7FCDCD;
+  z-index: -1;
+  position:absolute;
+  background:linear-gradient(160deg,  #7FCDCD 54%, white 100%, white);
+  transform:skewY(-3.1deg);
+  transform-origin: top right;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100%;
+  
+  }
+  
