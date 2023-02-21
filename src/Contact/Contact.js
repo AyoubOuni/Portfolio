@@ -1,7 +1,6 @@
 import React from 'react'
-import CV from "./CV.pdf"
-import show from "./show.png"
-import show2 from "./show2.png"
+import Icon from'./../Home/Icon'
+import avatar from "./av.gif"
 import {AiOutlineFile} from 'react-icons/ai';
 import {BsTelephoneFill} from 'react-icons/bs';
 import {FaMapMarkerAlt} from 'react-icons/fa';
@@ -23,66 +22,166 @@ function reveal() {
       }
     }
   }
+
 function Contact() {
+  function hide(){
+    document.getElementById("drop").checked = false;document.getElementById('bar').classList.remove("d-none");document.getElementById('bar2').classList.add("d-none");
+  }
   const language=useSelector(state => state.language);
     window.addEventListener("scroll", reveal);
   return (
-    <div id="contact" className="all3" >
-    <div  className="container   ">
-         <div className=" d-flex justify-content-start  my-3 none ">
-      <h1 className=" ty" style={{color:' #ff6600',textTransform:'uppercase'}}><div className="  border border-2 rounded-circle w d-inline-block position-relative shadow-lg  bg-body rounded n w" ><TiContacts className="position-relative bi2" style={{left:'10.5px',bottom:'5px'}}size={27} /></div><span className="ms-2">Contact</span></h1>
+    <div id="contact" onClick={hide} className="all3 mt-5  position-relative " style={{bottom:'140px'}} >
+      
+    <div  className="container pt-2 none">
+         <div className=" d-flex justify-content-center text-white  mt-5 my-3 none ">
+      <h1 className=" ty" style={{color:' ',textTransform:'uppercase'}}><span className="ms-2">Contact<hr/></span></h1>
     </div>
     <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div className="row">
+      <div className="col-4 position-relative rightu">
+      <h1 className='text-white w-50 text-nowrap'>
+    Ayoub's Portfolio
+    </h1>
+    <div className="text-white" style={{fontSize:'18px'}}>
 
-    <div className="d-flex justify-content-start">
-    <span className="showforbigscreen position-relative none" style={{left:"60px"}}>    <img src={show2} width="350" height="350"></img></span>
+    {(language===false)?<>Merci de visiter le site de mon portfolio personnel<br/> Connectez-vous avec moi sur les réseaux sociaux.
+<br/>Continue de monter 🚀 Connectez-vous avec moi sur le chat en direct !</>:<>    Thank you for visiting my personal portfolio<br/> website. Connect with me over socials.
+    <br/>
+ 
+Keep Rising 🚀 Connect with me over live chat!</> }
 
-       <div className="bounce-in-top  mt-5  watch ms3  h-100  "  >
-        <div className="card mt-5">
-    <div className="card-header  text-center bg-primary text-white text-nowrap">
-    <span  style={{color:'white',fontSize:'18px'}}><MdEmail size={20}/>Email:</span>  <br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} href="mailto:ayoubelouni6@gmail.com">ayoubelouni6@gmail.com</a></b><br/>
-    <span   style={{color:'white',fontSize:'18px'}}><BsTelephoneFill size={18}/>Tel:</span><br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} href="tel:+21699656639">+216 99656639</a></b><br/>
-    <span   style={{color:'white',fontSize:'18px'}}><IoLogoWhatsapp size={18}/>Whatsapp:</span><br/><b style={{color:'black'}}>+216 96876347</b><br/>
-    <span   style={{color:'white',fontSize:'18px'}}><FaMapMarkerAlt size={18}/>Address:</span><br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} target="_blank" href="https://goo.gl/maps/LDVwpMREHuC94Md57">Sousse</a></b><br/>
+   
     </div>
+      </div>
+    <div className="col-4">
+    <span className="d-flex justify-content-center position-relative mt-5 position-relative glisse" style={{bottom:'150px',left:'30px'}}>
+    <img src={avatar}  className="mt-3 none  im imging" ></img>
+    </span>
+
     </div>
-    </div>
-    <span className="showforbigscreen position-relative none mt-4 ms-5">    <img src={show} width="350" height="350"></img></span>
-    </div>
-    <div className=" d-none ms-5 mt-3  f  ">
-    <h1 className="ms-5 ty" style={{color:' #ff6600',textTransform:'uppercase'}}><div className="  border border-2 rounded-circle w d-inline-block position-relative shadow-lg  bg-body rounded n w" ><TiContacts className="position-relative bi2" style={{left:'10.5px',bottom:'5px'}}size={27} /></div><span className="ms-2">Contact</span></h1>
-    </div>
-    <div className="showforbigscreen">
-    <div  className="d-flex justify-content-center ms-5 mt-2 heartbeat none" ><a  className="button-three text-nowrap text-uppercase ps-3"role="button" href={CV} target="_blank" ><AiOutlineFile className="mb-1 me-1" />{(language===false)?"voir mon CV":"see my resume"}</a></div>
-    </div>
-  
+   <div className="col-4 position-relative lefty" style={{bottom:'52px'}}>
+   <div className="d-flex justify-content-end position-relative mt-5 position-relative" style={{right:'30px'}} >
+    <h1 className="text-white text-nowrap"> Contact Info
+</h1> 
+</div>  
+<div className="position-relative" >
+<div className=" d-flex justify-content-end position-relative" >
+<br/>
+
+<div  style={{color:'#0256ff',fontSize:'18px'}}><MdEmail size={30}/></div>  <b style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} href="mailto:ayoubelouni6@gmail.com">ayoubelouni6@gmail.com</a></b><br/>
+<br/>
+</div>
+<div className=" d-flex justify-content-end position-relative" style={{right:"85px"}}>
     
-    <div  className="d-flex justify-content-center ms-4 mt-1   " >
-   <div className="reveal2  watch me-5 b h-100" style={{ width: "25em"}} >
-    <div className="card text-center" >
-      <div className="card-header  text-center  bg-primary text-white text-nowrap ">
-      <span  style={{color:'white',fontSize:'18px'}}><MdEmail size={20}/>Email:</span>  <br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} href="mailto:ayoubelouni6@gmail.com">ayoubelouni6@gmail.com</a></b><br/>
-      <span   style={{color:'white',fontSize:'18px'}}><BsTelephoneFill size={18}/>Tel:</span><br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} href="tel:+21699656639">+216 99656639</a></b><br/>
-      <span   style={{color:'white',fontSize:'18px'}}><IoLogoWhatsapp size={18}/>Whatsapp:</span><br/><b style={{color:'black'}}>+216 96876347</b><br/>
-      <span   style={{color:'white',fontSize:'18px'}}><FaMapMarkerAlt size={18}/>Address:</span><br/><b style={{color:'black'}}><a style={{textDecoration:'none',color:'black'}} target="_blank" href="https://goo.gl/maps/LDVwpMREHuC94Md57">Sousse</a></b><br/>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div  className="d-flex justify-content-center  mt-1   " >
-     <div><div className=" mt-2"> <div  className="d-flex justify-content-center ms-1 mt-3 heartbeat shu d-none  " ><a  className="button-three text-nowrap text-uppercase shu ps-3"role="button" href={CV} target="_blank"  ><AiOutlineFile className="mb-1 me-1" />{(language===false)?"voir mon CV":"see my resume"}</a></div></div></div>
+<div   style={{color:'#0256ff',fontSize:'18px'}}><BsTelephoneFill size={24}/></div><b  style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} href="tel:+21699656639">+216 99656639</a></b><br/>
+<br/>
 </div>
-<div  className="d-flex justify-content-center  mt-4   " >
-<span className="showformeduimandlittle position-relative " style={{left:"12px"}}>    <img src={show2} width="290" height="290"></img></span>
+<div className=" d-flex justify-content-end position-relative" style={{left:"-153px"}}>
+    
+<div   style={{color:'#0256ff',fontSize:'18px'}}><FaMapMarkerAlt size={24}/></div><b style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} target="_blank" href="https://goo.gl/maps/LDVwpMREHuC94Md57">Sousse</a></b><br/>
+<br/>
+</div>
+<div className="d-flex justify-content-end position-relative mt-5 position-relative" style={{left:"15px"}}>
+<div className="position-relative" style={{bottom:'75px'}}>
+
+<Icon />
+</div>
 </div>
 
 
-      <br/><br/><br/>
+
+</div>
+
+   </div>
+    
+    
+
+</div>
+   
+
+      <div className="d-flex justify-content-center h4 text-center text-white">{(language===false)?"© Copyright 2023 Ouni Ayoub.Tous droits réservés.":"© Copyright 2023 Ouni Ayoub. All rights reserved."}</div>
       <br/>
       <br/>
-      <div className="d-flex justify-content-center h5 text-center">{(language===false)?"© Copyright 2023 Ouni Ayoub.Tous droits réservés.":"© Copyright 2023 Ouni Ayoub. All rights reserved."}</div>
+      <br/>
+
+    </div>
+    <div  className="container pt-2 d-none r">
+         <div className=" d-flex justify-content-center text-white me-4  mt-5 my-3  ">
+      <h1 className=" ty " style={{color:' ',textTransform:'uppercase'}}><span className="">Contact<hr/></span></h1>
+    </div>
+ <br/>
+ <div className="">
+      <div className="">
+      <h1 className='d-flex justify-content-center text-white  text-nowrap'>
+    Ayoub's Portfolio
+    </h1>
+    <div className="text-white d-flex justify-content-center text-center" style={{fontSize:'18px'}}>
+
+    {(language===false)?<>Merci de visiter le site de mon portfolio personnel Connectez-vous avec moi sur les réseaux sociaux.
+Continue de monter 🚀 Connectez-vous avec moi sur le chat en direct !</>:<>    Thank you for visiting my personal portfolio<br/> website. Connect with me over socials.
+    <br/>
+ 
+Keep Rising 🚀 Connect with me over live chat!</> }
+
+   
+    </div>
+      </div>
+    <div className="">
+    <span className="d-flex justify-content-center position-relative mt-5 position-relative" style={{bottom:'50px',left:'13px'}}>
+    <img src={avatar}  className="mt-3  img-fluid im" ></img>
+    </span>
+
+    </div>
+ 
+    
+    
+
+</div>
+    <div className=" position-relative" style={{bottom:'52px'}}>
+   <div className="d-flex justify-content-center position-relative mt-5 position-relative ms-"  >
+    <h1 className="text-white text-nowrap mb-4"> Contact Info
+</h1> 
+</div>  
+<div className="position-relative" >
+<div className=" d-flex justify-content-center position-relative" >
+<br/>
+
+<div  style={{color:'#0256ff',fontSize:'18px'}}><MdEmail size={30}/></div>  <b style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} href="mailto:ayoubelouni6@gmail.com">ayoubelouni6@gmail.com</a></b><br/>
+<br/>
+</div>
+<div className=" d-flex justify-content-center position-relative" style={{right:"40px"}}>
+    
+<div   style={{color:'#0256ff',fontSize:'18px'}}><BsTelephoneFill size={24}/></div><b  style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} href="tel:+21699656639">+216 99656639</a></b><br/>
+<br/>
+</div>
+<div className=" d-flex justify-content-center position-relative" style={{right:"73px"}}>
+    
+<div   style={{color:'#0256ff',fontSize:'18px'}}><FaMapMarkerAlt size={24}/></div><b style={{color:'white',fontSize:'18px'}} className="ms-2"><a style={{textDecoration:'none',color:'white'}} target="_blank" href="https://goo.gl/maps/LDVwpMREHuC94Md57">Sousse</a></b><br/>
+<br/>
+</div>
+<div className="d-flex justify-content-center position-relative mt-5 position-relative" style={{right:"19px"}}>
+<div className="position-relative" style={{bottom:'75px'}}>
+
+<Icon />
+</div>
+</div>
+
+
+
+</div>
+
+   </div>
+   
+   
+
+      <div className="d-flex justify-content-center h4 text-center text-white">{(language===false)?"© Copyright 2023 Ouni Ayoub.Tous droits réservés.":"© Copyright 2023 Ouni Ayoub. All rights reserved."}</div>
       <br/>
       <br/>
+     
 
     </div>
     </div>

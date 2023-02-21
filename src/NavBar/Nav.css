@@ -1,9 +1,11 @@
-.active{ color: #ff6600; margin-right: 13px; text-decoration: none ; border-bottom: 2px solid #ff6600; padding: 0 0 3.5px; cursor: pointer;}
+.active{  margin-right: 13px; text-decoration: none ; border-bottom: 2px solid black; padding: 0 0 5.5px; cursor: pointer;}
 .notactive{color:white;padding:8px;text-decoration: none; margin-right: 13px; cursor: pointer; offset:90px;}
+.notactive2{color:white;padding:8px;text-decoration: none; margin-right: 13px; cursor: pointer; offset:90px;}
 .notactive:hover{color:white;}
-.active:hover{color: #F36F25;}
-.blue{background-color:#03224c; height:65px; }
-.marg  {margin-right: 210px; margin-top:-43px; font-size:19px;}
+.active:hover{color: hsl(203, 100%, 50%);}
+.active2:hover{color: white;}
+.blue{background-color:#1e1e1e; height:65px; color:white; }
+.marg  {margin-right: 210px; margin-top:-41px; font-size:16px;text-transform: uppercase;font-weight: bold;}
 .marg2  {position: relative; left:40px}
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
@@ -11,7 +13,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 .head{
-    color:white;
+   
     font-family: 'Shadows Into Light', cursive;
     font-size: 40px;
     margin-left:7%;
@@ -48,6 +50,15 @@
     
 }     
       @media screen and (min-width: 200px) and (max-width:1150px) {
+       
+        .texting{
+ 
+          font-size: 21px !important ;
+          
+        }
+        .blue{background-color:#1e1e1e !important; height:65px; color:white; }
+        .head{color: white;}
+
         .current_lang{font-weight: bold!important;}
         .btn {
             display: inline-block !important;
@@ -61,7 +72,9 @@
            }
            
           
-          
+          #langu{
+
+          }
           
           .button_lang {
             cursor: pointer;
@@ -75,10 +88,10 @@
        
           
           .current_lang {
-            background: white;
+            background: #029eff;
             left: 0;
         padding-left: 2px;
-        color: #F36F25;
+        color: black;
           }
           
           
@@ -135,7 +148,11 @@
           margin: 0px;
           display:inline-block;
           float: right !important;
-          background-color: #03224c;
+          background-color: #1e1e1e;
+          }
+          .nnr{
+            background-color: white !important;
+
           }
         
         /* Styling the links */
@@ -215,7 +232,7 @@
           .toggle {
             display: block;
            float: right;
-            padding:14px 20px;	
+            margin:15px 20px;	
             color:#FFF;
             font-size:18px;
             text-decoration:none;
@@ -223,7 +240,7 @@
           }
         
           .toggle:hover {
-            background-color: #F36F25;
+            background-color: #1e1e1e;
           }
         
           /* Display Dropdown when clicked on Parent Lable */
@@ -250,7 +267,7 @@ width: 100%;
         
           nav a:hover,
            nav ul ul ul a {
-            background-color: #F36F25;
+            background-color: #1e1e1e;
           }
           
           nav ul li ul li .toggle,
@@ -362,14 +379,31 @@ width: 100%;
               }
             }
             .progress {
+              border-radius: 0px !important;
               position: fixed;
               top: 0px;
-              background-color: #03224c !important;
+              background-color: #1e1e1e !important;
               width: 100vw;
               height: 6px !important;}
               .fill {
-                background-color: #F36F25;
+                background-color: white;
                 width: 40px;
                 height: 100%;
               }
-    
+    .lang{
+      position: relative;
+      bottom:4px;
+    }
+  
+    @media screen and (min-width: 1000px) and (max-width: 1150px) {
+      .dn{
+        display: block !important;
+      }}
+    @media screen and (min-width: 1150px){
+      .dn{
+        display:none !important;
+      }
+    }
+    .bhy{
+      z-index: 300 !important;
+    }

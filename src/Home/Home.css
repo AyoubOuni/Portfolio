@@ -13,15 +13,15 @@
   
 }
 ::-webkit-scrollbar-thumb:hover{
-  background:#7FCDCD;
+  background:#1e1e1e;
 }
-.all{background-color: #7FCDCD;
+.all{background-color: #1e1e1e;
   position: relative;
 
-  background:linear-gradient(160deg, #00ffff, #7FCDCD 60%, white 100%, white);
-
+height: 590px;
   width: 100%;
   }
+  
 
 .line-1{ 
     font-size: 180%;
@@ -96,10 +96,7 @@
     font-weight: bold;
     margin-right: 25px;
   }
-  .img{
-    width:200px; height:200px;
-    margin-right:22px;
-  }
+  
   .mp{
     margin-right:10px;
 
@@ -108,10 +105,9 @@
 }
 .all::before{
   content: "";
-  background-color: #7FCDCD;
+  background-color: #1e1e1e;
   z-index: -1;
   position:absolute;
-  background:linear-gradient(160deg,  #7FCDCD 54%, white 100%, white);
   transform:skewY(-3.1deg);
   transform-origin: top right;
   top:0;
@@ -120,5 +116,284 @@
   left:0;
   width: 100%;
   
+  }
+  .oblig{
+    color: black !important; 
+  }
+  
+  /* body {
+    overflow-x: hidden;
+  } */
+  .text-animation {
+    animation: type 2s steps(40), delete 2s ease-in-out forwards, replace 2s ease-in-out 2s forwards;
+    transition: all 2s ease-in-out;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes delete {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  @keyframes replace {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+  .sizze{
+    font-size:24px;
+  }
+  
+.de-wobble {
+	-webkit-animation: de-wobble 2.8s both infinite;
+	        animation: de-wobble 2.8s both infinite;
+  text-align: center;
+  animation-delay: 2s;
+}
+
+/* Keyframes for the wobble animation */
+
+@keyframes de-wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50%50%;
+    transform-origin: 50%50%;
+  }
+  7.5% {
+    -webkit-transform: translateX(-30px)rotate(-6deg);
+    transform: translateX(-30px)rotate(-6deg);
+  }
+  15% {
+    -webkit-transform: translateX(15px)rotate(6deg);
+    transform: translateX(15px)rotate(6deg);
+  }
+  22.5% {
+    -webkit-transform: translateX(-15px)rotate(-3.6deg);
+    transform: translateX(-15px)rotate(-3.6deg);
+  }
+  30% {
+    -webkit-transform: translateX(9px)rotate(2.4deg);
+    transform: translateX(9px)rotate(2.4deg);
+  }
+  37.5% {
+    -webkit-transform: translateX(-6px)rotate(-1.2deg);
+    transform: translateX(-6px)rotate(-1.2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-6px)rotate(0deg);
+    transform: translateX(-6px)rotate(0deg);
+  }
+}
+
+
+.mouse{height:50px;width:35px;border-radius:14px;border:2px solid #fff}.mouse:after{content:'';display:block;height:8px;width:2px;margin:10px auto;background:#fff;position:relative;-webkit-animation:a 1.2s ease infinite;animation:a 1.2s ease infinite}.arrow-scroll{width:35px;margin-top:10px}.arrow-scroll>span{font-family:Arial,sans-serif;display:block;width:9px;height:9px;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-right:2px solid #fff;border-bottom:2px solid #fff;margin:5px auto 3px;-webkit-animation:b 1s infinite;animation:b 1s infinite;-webkit-animation-delay:.2s;animation-delay:.2s}.arrow-scroll>span:first-child{-webkit-animation-delay:.1s;animation-delay:.1s}.arrow-scroll>span:last-child{-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes a{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}to{opacity:0;-webkit-transform:translateY(8px);transform:translateY(8px)}}@keyframes a{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}to{opacity:0;-webkit-transform:translateY(8px);transform:translateY(8px)}}@-webkit-keyframes b{0%{opacity:0}50%{opacity:.5}to{opacity:1}}@keyframes b{0%{opacity:0}50%{opacity:.5}to{opacity:1}}
+
+
+/* Adding CSS manually is only necessary in JSFiddle,
+   where CSS can't be inserted into the <head> */
+   .typed-cursor{
+    opacity: 1;
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+  }
+  @keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+  }
+  @-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+  }
+  .typed-fade-out{
+    opacity: 0;
+    transition: opacity .25s;
+    -webkit-animation: 0;
+    animation: 0;
+  }
+  .dontsu{
+    display: none !important;
+  }
+  .su{
+    display: block !important;
+  }
+  .wrapper{
+    display:    flex;
+    ;
+    
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: #029eff;
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+  }
+  .texting{
+    list-style: none !important;
+    color: #029eff !important;
+    font-size: 40px ;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+
+
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 20px);
+    }
+    100%{
+      left: 0;
+
+    }
+  }
+
+ 
+  
+  .container3 {
+   
+    font-size: clamp(2rem, 2.8vw, 5rem);
+    font-family: Raleway;
+    font-weight: bold;
+  }
+  
+  .typewriter {
+    width: 29.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #029eff;
+    animation: cursor 3s step-start 2, 
+      text 4s steps(28) alternate 2;
+  }
+  .typewriter3 {
+    width: 29.5ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #029eff;
+    animation: cursor2 1s  step-start 1, 
+      text2 3s steps(28)  alternate 1;
+  }
+  
+  @keyframes cursor {
+    0% { 
+     
+      border-color: #029eff; 
+    }
+    100% { 
+      
+      border-color: #029eff; 
+    }
+  }
+  @keyframes cursor2 {
+    0% { 
+     
+      border-color: #029eff; 
+    }
+    100% { 
+      
+      border-color: #029eff; 
+    }
+  }
+  
+  @keyframes text {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 29ch; 
+    }
+  }
+  @keyframes text2 {
+    0% { 
+      width: 0; 
+    }
+    100% { 
+      width: 20ch ; 
+    }
+  }
+  .boxr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .boxr span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  
+  .boxr span:nth-child(2)
+  {
+    animation-delay: -0.2s;
+  }
+  
+  .boxr span:nth-child(3)
+  {
+    animation-delay: -0.4s;
+  }
+  
+  @keyframes animate{
+    
+    0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
   }
   

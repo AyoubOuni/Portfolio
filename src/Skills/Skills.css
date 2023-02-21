@@ -41,8 +41,43 @@
   opacity: 0;
   transition: 1s all ease;
 }
+@media screen and (min-width: 750px) and (max-width: 1150px) {
+  .tr{margin-left: 19px!important;}
+}
 @media screen and (min-width: 200px) and (max-width: 1150px) {
+  .card{          height:400px !important;
+  }
+  .boxx {
+    width: 195px !important;
+  
+    background: #0256ff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position:relative;
+  }
   .t{margin-left: 19px!important;}
+  .skil{
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .content-image{
+    width: 227px !important;
+    height: 227px !important;
+  }
+  .content-title{
+font-size: 15px!important;
+font-weight: bold !important;
+overflow-wrap: anywhere !important;
+
+  }
+  .little_one1{
+font-size: 16.2px!important;
+
+  }
   .button-three {
   
     border: none;
@@ -74,37 +109,19 @@
  
 
      }
-     .all2{background-color: #7FCDCD;
-      background:linear-gradient(160deg,  #b3b3ff, #7FCDCD 60%, white 100%, white);
+     .all2{background-color: #1e1e1e;
     position: relative;
       width: 100%;
       }
-     .all2::before{
-      content: "";
-      background-color: #7FCDCD;
-      z-index: -1;
-      position:absolute;
-      background:linear-gradient(160deg,  #b3b3ff, #7FCDCD 54%, white 100%, white);
-      transform:skewY(-3deg);
-      transform-origin: top right;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      width: 100%;
-      
-      }
-     .all3{background-color: #7FCDCD;
-      background:linear-gradient(160deg,  #b3b3ff, #7FCDCD 60%, white 100%, white);
+     .all3{background-color: #1e1e1e;;
     position: relative;
       width: 100%;
       }
      .all3::before{
       content: "";
-      background-color: #7FCDCD;
+      background-color: #1e1e1e;;
       z-index: -1;
       position:absolute;
-      background:linear-gradient(160deg,  #b3b3ff, #7FCDCD 54%, white 100%, white);
       transform:skewY(3.1deg);
       transform-origin: top right;
       top:0;
@@ -115,7 +132,14 @@
       
       }
       @media screen and (min-width: 200px) and (max-width: 750px) {
-
+        .wrapper .static-txt{
+          font-size: 21px !important;
+       
+        }
+        .img{
+          width:300px; height:300px;
+          margin-right:22px;
+        }
       .f{display:flex !important;
         justify-content: center !important;
         margin-right: 84px !important;
@@ -138,3 +162,256 @@
         position: relative;
         top: 3px !important;
       }}
+    @media screen and (min-width: 200px) and (max-width: 500px) {
+      .content-image{
+width: 220px !important;
+height: 220px !important;
+      }
+    }
+    @media screen and (min-width: 500px) and (max-width: 750px) {
+      .content-image{
+width: 280px !important;
+height: 280px !important;
+      }
+      .little_one1 {
+        font-size: 18.2px!important;
+    }
+
+  
+      .content-title {
+          font-size: 17px!important;
+          font-weight: bold !important;
+          overflow-wrap: anywhere !important;
+      }
+
+    }
+    @media screen and (min-width: 750px) and (max-width: 1150px) {
+      .content-image {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .little_one1{
+      font-size: 19.2px!important;
+      
+        }
+    .content-title {
+      font-size: 17.6px!important;
+      font-weight: bold !important;
+      overflow-wrap: anywhere !important;}
+
+    }
+    @media screen and (min-width: 1150px) and (max-width: 1350px) {
+ .head{
+  margin-left:11px !important;
+ }
+ .marg2{
+  left: 60px;
+ }
+ 
+  }
+
+
+
+      @media screen and (min-width: 750px) and (max-width: 1150px) {
+      
+       
+        .glisse{
+          bottom: 120px !important;
+        }
+        .rt{
+          display:inline-block !important;
+        display:flex !important;
+                justify-content: center !important;
+                margin-right: 66px !important;
+            
+        }
+        .gy{
+          display: none !important;
+        }
+        .hoi{
+          display: block !important;
+        }
+        .img {
+          width: 450px ;
+          height: 450px;
+        }
+        .btm{
+          bottom: 280px !important;
+          right: 100px !important;
+        }
+        .wrapper .static-txt,.texting{
+          font-size: 35px !important;
+        }
+        .wrapper{
+          margin-left: 50px !important;
+        }
+        .tb{
+          padding-left: 50px !important;
+          bottom:390px !important;
+        }
+        .mousing{
+display: none !important;        }
+        .mousir{
+display: block !important;        }
+.all{
+  height: 450px !important;
+}
+.wrapper{
+  position: relative;
+  bottom: 50px !important;
+}
+
+      }
+
+      @media screen and (min-width: 750px) and (max-width: 1000px) {
+        .btm{
+          bottom: 280px !important;
+          right: 13px !important;
+        }
+        .mousir{
+          bottom: 400px !important;        }
+          .all{
+            height: 410px !important;
+          }
+        .wrapper .static-txt,.texting{
+          font-size: 30px !important;
+        }
+        .wrapper{
+          margin-left: 50px !important;
+        }
+        .tb{
+          padding-left: 50px !important;
+          bottom:390px !important;
+        }
+.wrapper{
+  position: relative;
+  bottom: 50px !important;
+}
+
+      }
+      @media screen and (min-width: 850px) and (max-width: 900px) {
+        .tb{
+          padding-left: 50px !important;
+          bottom:350px !important;
+        }
+        .img {
+          width: 380px ;
+          height: 380px;
+        }
+        .btm{
+          bottom: 250px !important;
+          right: 80px !important;
+        }
+        .wrapper .static-txt,.texting{
+          font-size: 27px !important;
+        }
+        .wrapper{
+          margin-left: 50px !important;
+        }
+        .mousir{
+          bottom: 350px !important;        }
+          .all{
+            height: 370px !important;
+          }
+.wrapper{
+  position: relative;
+  bottom: 70px !important;
+}
+
+      }
+      @media screen and (min-width: 800px) and (max-width: 850px) {
+        .mousir{
+          bottom: 300px !important;        }
+          .all{
+            height: 340px !important;
+          }
+        .tb{
+          padding-left: 50px !important;
+          bottom:320px !important;
+        }
+        .btm{
+          bottom: 250px !important;
+          right: 75px !important;
+        }
+        .wrapper{
+          position: relative;
+          bottom: 80px !important;
+        }
+        .img {
+          width: 350px ;
+          height: 350px;
+        }
+        .wrapper .static-txt,.texting{
+          font-size: 25px !important;
+        }
+        .wrapper{
+          margin-left: 50px !important;
+        }
+     
+
+
+      }
+      .imging{
+        width:450px;
+      }
+      @media screen and (min-width: 990px) and (max-width: 1110px) {
+.lefty{
+  left:-25px !important;
+}
+.rightu{
+  left:45px !important;
+}
+
+
+
+
+      }
+    @media screen and (min-width: 750px) and (max-width: 767px) {
+
+.rightu{
+  right: 70px !important;
+}
+.lefty{
+  left: 100px !important;
+}
+
+
+        
+      }
+      @media screen and (min-width: 750px) and (max-width: 800px) {
+        .mousir{
+          bottom: 300px !important;        }
+          .all{
+            height: 340px !important;
+          }
+        .tb{
+          padding-left: 50px !important;
+          bottom:320px !important;
+        }
+        .btm{
+          bottom: 250px !important;
+          right: 20px !important;
+        }
+        .wrapper{
+          position: relative;
+          bottom: 80px !important;
+        }
+        .img {
+          width: 350px ;
+          height: 350px;
+        }
+        .wrapper .static-txt,.texting{
+          font-size: 25px !important;
+        }
+        .wrapper{
+          margin-left: 50px !important;
+        }
+     
+
+
+      }
+      @media screen and (max-width: 750px){
+.yub{
+  top: 3px !important;
+}
+      }

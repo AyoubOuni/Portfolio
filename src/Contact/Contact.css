@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&family=Signika+Negative&display=swap');
+
+
 .button-three {
     position: relative;
-    background-color: #ff6600;
+    background-color: #1e1e1e !important;
     border: none;
     padding: 20px;
     width: 200px;
@@ -9,9 +12,13 @@
     transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
-    color:white;
+    color:white !important;
+    border:solid 1px white;
     font-size:20px;
     font-weight:bold;
+    font-family: 'Bebas Neue', cursive ;
+font-family: 'Dosis', sans-serif;
+font-family: 'Signika Negative', sans-serif!important;;
     
 }
 .ms3{
@@ -27,18 +34,7 @@
    color:#000;
 }
 
-.button-three:after {
-    content: "";
-    background: #f1c40f;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
+
 
 .button-three:active:after {
     padding: 0;
@@ -132,3 +128,5 @@
               animation-timing-function: ease-out;
     }
   }
+
+  

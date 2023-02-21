@@ -11,10 +11,18 @@
       drop-shadow(0px 0px 1px green) 
      
   }
+ 
   .widt{max-width: 690px !important;min-width: 690px !important;}
  
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-  *{
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis&family=Signika+Negative&display=swap');
+  .fonte{
+font-family: 'Bebas Neue', cursive;
+font-family: 'Dosis', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+
+  }
+    *{
     font-family: 'Ubuntu', sans-serif;
 }
   .top1 {

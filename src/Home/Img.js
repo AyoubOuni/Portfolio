@@ -1,12 +1,12 @@
 import React from 'react'
-import photo from "./me.jpeg"
+import photo from "./bg.png"
 import './Home.css';
 
 function Img() {
   return (
     <div>
       <div className="ms-5 " >
-<img src={photo}  className="img" width="350" height="350" alt="ayoub ouni" style={{ borderRadius: '170px'}}></img>
+<img src={photo}  className="img" width="630" height="630" alt="ayoub ouni" style={{ }}></img>
 </div>
     </div>
   )

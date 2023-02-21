@@ -1,4 +1,7 @@
-
+.bord{
+        border: black solid 2px;
+        border-radius: 7px;
+}
 .speech {
     margin: 50px;
     width: 200px;
